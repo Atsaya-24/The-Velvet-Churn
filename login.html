@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Churn | Authentication</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="auth-center-container">
+        <div class="auth-card">
+            <h2>The Velvet Churn 🍦</h2>
+            <div class="tab-button-group">
+                <button id="showLoginBtn" onclick="openLogin()">Log In</button>
+                <button id="showSignupBtn" onclick="openSignup()">Sign Up</button>
+            </div>
+            <div id="loginSection">
+                <form id="loginForm" onsubmit="handleLogin(event)" class="auth-form">
+                    <label for="loginEmail">Email Address:</label>
+                    <input type="email" id="loginEmail" placeholder="name@email.com" required>
+
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••" required>
+
+                    <button type="submit" class="auth-submit-btn">Log In</button>
+                </form>
+            </div>
+            <div id="signupSection">
+                <form id="signupForm" onsubmit="handleSignup(event)" class="auth-form">
+                    <label for="signupName">Full Name:</label>
+                    <input type="text" id="signupName" placeholder="Enter your full name" required>
+
+                    <label for="signupEmail">Email Address:</label>
+                    <input type="email" id="signupEmail" placeholder="name@email.com" required>
+
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" placeholder="Min. 8 chars (Must include A-Z, a-z, 0-9)" required>
+
+                    <button type="submit" class="auth-submit-btn">Create Account</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
