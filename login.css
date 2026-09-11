@@ -1,0 +1,97 @@
+.auth-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff5f5; 
+    font-family: Arial, sans-serif;
+}
+.auth-center-container .auth-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box; 
+}
+.auth-center-container .auth-header h2 {
+    color: #d63031; 
+    margin-bottom: 25px;
+}
+
+.auth-center-container .tab-button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.auth-center-container .tab-button-group button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.auth-center-container .auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-center-container .auth-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+.auth-center-container .auth-form input {
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-center-container .auth-form input:focus {
+    outline: 2px solid #ff7675; 
+}
+.auth-center-container .auth-submit-btn {
+    background-color: #d63031;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.auth-center-container .auth-submit-btn:hover {
+    background-color: #b32424;
+}
+
+.auth-center-container .back-home-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+.auth-center-container .back-home-wrapper a {
+    color: #d63031;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-center-container .back-home-wrapper a:hover {
+    text-decoration: underline;
+}
